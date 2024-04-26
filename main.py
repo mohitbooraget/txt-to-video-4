@@ -22,9 +22,9 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "6305751172:AAG3f0lLXE-ivB1r3xP0VSvUfR0nKfURYfM",
-             api_id= 29759544,
-             api_hash= "97030a871720998c6efc5debcce67aa4")
+             bot_token= "6946359667:AAEUE6wpdPmY5qCHdzvedwzl015Vkz9sYVM",
+             api_id= 23291931,
+             api_hash= "4b11dd648188731fb7c9bc8083e8791c")
 
 
 @bot.on_message(filters.command(["start"]))
@@ -39,7 +39,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["tuktuk"]))
+@bot.on_message(filters.command(["imendax"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Send TXT file for download')
     input: Message = await bot.listen(editable.chat.id)
