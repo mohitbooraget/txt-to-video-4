@@ -22,7 +22,7 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "7173591400:AAE5Z9Kcw0juyT7S-APdRJ7lLD3taqbK2i4",
+             bot_token= "6410707571:AAG2JDC-PA0Ox5IBfAMve6TRJGhGhhmPo0Y",
              api_id= 23291931,
              api_hash= "4b11dd648188731fb7c9bc8083e8791c")
 
@@ -39,7 +39,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["imendax"]))
+@bot.on_message(filters.command(["only4"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('**SEND TXT FILE 🗃️ OR LINKS TO DOWNLOAD 🔗**')
     input: Message = await bot.listen(editable.chat.id)
